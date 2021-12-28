@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+<meta charset="UTF-8">
+<title>SOLVE</title>
+<link rel="stylesheet" href="css/fwdrev.css" />
+<script type="text/javascript" src="js/fwdrev.js"></script>
+<script>
+var simsubscreennum=0;
+var temp=0;
+</script>
 </head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<body style="margin:0; font-family:verdana; color:#ffffff;">
+<div id="simscreen">
+<div id="title"><h3>Motor forward and reverse direction control using PLC</h3></div>
+
+<div class="simsubscreen">
+	
+	<img style="position:absolute; left:25px; top:35px;" src="images/1.png" />
+	<div style="position:absolute; left:40.5px; top:275px; width:298px; height:300px; background-color:black;"></div>
+	<img style="position:absolute; left:40px; top:275px;" src="images/motor.png" />
+	<img id="arrow" style="position:absolute; left:80px; top:392.5px; visibility:hidden;" src="images/arrow3.png" />
+	<img style="position:absolute; left:57.5px; top:408.5px;" src="images/rotar.png" />
+	
+	<img style="position:absolute; left:460px; top:1px; width:480px; height:625px; " src="images/2.png" />
+	<div id="op1" class="output" style="top:55px;"></div>
+	<div id="op2" class="output" style="top:149.5px;"></div>
+	<div id="op3" class="output" style="top:193.5px;"></div>
+	<div id="op4" class="output" style="top:229px;"></div>
+	<div id="op5" class="output" style="top:261px;"></div>
+	<div id="op6" class="output" style="top:292.5px;"></div>
+	<div id="op7" class="output" style="top:386px;"></div>
+	<div id="op8" class="output" style="top:431.5px;"></div>
+	<div id="op9" class="output" style="top:468.5px;"></div>
+	<div id="op10" class="output" style="top:496.5px;"></div>
+	<div id="op11" class="output" style="top:529.5px;"></div>
+	<div id="op12" class="output" style="top:572.5px;"></div>
+	<img style="position:absolute; left:470px; top:5px;" src="images/3.png" />
+	<img id="pointer" style="position:absolute; left:690px; top:267px; animation:pointerMove 0.75s linear infinite; visibility:hidden;" src="images/pointer.png" /><!--top:508.5px;-->
+	
+	<div id="fwd" style="position:absolute; left:320.5px; top:157.55px; background-color:#000000; width:15px; height:15px; border-radius:15px; border:2px solid #000000;"></div>
+	<div id="rev" style="position:absolute; left:320.5px; top:181px; background-color:#000000; width:15px; height:15px; border-radius:15px; border:2px solid #000000;"></div>
+	<div id="fwdSlow" style="position:absolute; left:320.5px; top:205px; background-color:#000000; width:15px; height:15px; border-radius:15px; border:2px solid #000000;"></div>
+	<div id="revSlow" style="position:absolute; left:320.5px; top:228px; background-color:#000000; width:15px; height:15px; border-radius:15px; border:2px solid #000000;"></div>
+	
+	<div id="bit1" class="bits" style="position:absolute; left:521px; top:39.5px; background-color:#00AC00;">I:1/0</div>
+	<div id="bit2" class="bits" style="position:absolute; left:574px; top:39.5px; background-color:#FF0000;">I:1/1</div>
+	<div id="bit3" class="bits" style="position:absolute; left:634px; top:39.5px; background-color:#00AC00;">I:1/2</div>
+	<div id="bit4" class="bits" style="position:absolute; left:572px; top:87.5px; background-color:#FF0000;">O:2/0</div>
+	
+	<div id="bit5" class="bits" style="position:absolute; left:520px; top:135px; background-color:#FF0000;">O:2/0</div>
+	<div id="bit6" class="bits" style="position:absolute; left:565px; top:135px; background-color:#00AC00;">T4:1/DN</div>
+	<div id="bit7" class="bits" style="position:absolute; left:627px; top:135px; background-color:#00AC00;">T4:0/TT</div>
+	
+	<div id="bit8" class="bits" style="position:absolute; left:519px; top:197px; background-color:#FF0000;">O:2/1</div>
+	
+	<div id="bit9" class="bits" style="position:absolute; left:520px; top:278px; background-color:#00AC00;">I:1/0</div>
+	<div id="bit10" class="bits" style="position:absolute; left:574px; top:278px; background-color:#FF0000;">I:1/2</div>
+	<div id="bit11" class="bits" style="position:absolute; left:634px; top:278px; background-color:#00AC00;">I:1/1</div>
+	<div id="bit12" class="bits" style="position:absolute; left:572px; top:324.5px; background-color:#FF0000;">O:2/2</div>
+	
+	<div id="bit13" class="bits" style="position:absolute; left:522.5px; top:371.5px; background-color:#FF0000;">O:2/2</div>
+	<div id="bit14" class="bits" style="position:absolute; left:567.5px; top:372px; background-color:#00AC00;">T4:0/DN</div>
+	<div id="bit15" class="bits" style="position:absolute; left:631px; top:372px; background-color:#00AC00;">T4:1/TT</div>
+	
+	<div id="bit16" class="bits" style="position:absolute; left:522px; top:440px; background-color:#FF0000;">O:2/4</div>
+	<div id="bit17" class="bits" style="position:absolute; left:519px; top:515px; background-color:#FF0000;">T4:0/TT</div>
+	<div id="bit18" class="bits" style="position:absolute; left:519px; top:560px; background-color:#FF0000;">T4:1/TT</div>
+	
+	<p id="accum1" style="position:absolute; left:805px; top:255.5px; font-size:13.5px; color:#FF0000; font-weight:bold; font-family:calibri;">0</p>
+	<p id="accum2" style="position:absolute; left:807.5px; top:498.5px; font-size:13.5px; color:#FF0000; font-weight:bold; font-family:calibri;">0</p>
+
+	<button id="stop" style="position:absolute; left:120px; top:161px; width:20px; height:19px; border-radius:11px; cursor:pointer; border-color:#E95B5B; background-color:transparent;" onclick="controlDirection(id)" disabled></button>
+	
+	<button id="forward" style="position:relative; left:120px; top:182.5px;  width:20px; height:19px; border-radius:11px; cursor:pointer; border-color:#4EB677; background-color:transparent;" title="I:1/0" onclick="controlDirection(id)"></button>
+	
+	<button id="reverse" style="position:absolute; left:120px; top:218px; width:20px; height:19px; border-radius:11px; cursor:pointer; border-color:#4EB677; background-color:transparent;" onclick="controlDirection(id)"></button>
+
+</div>
+
+<div id="copyright"> &copy; 2020 - <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal</div>
+
+</div>
 </body>
 </html>
