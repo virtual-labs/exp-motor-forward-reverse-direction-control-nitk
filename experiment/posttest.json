@@ -19,12 +19,12 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/QUIZ/2.gif\"\height=\"200\" width=\"400\" /><br>The above circuit can be represented by the following PLC ladder rung diagram",
+      "question": "<img src='images/QUIZ/2.gif' height='200' width='400' /><br>The above circuit can be represented by the following PLC ladder rung diagram",
       "answers": {
-        "a": "<img src=\"images/QUIZ/2a.gif\"\height=\"120\" width=\"300\"/>",
-        "b": "<img src=\"images/QUIZ/2b.gif\"\height=\"120\" width=\"300\"/>",
-        "c": "<img src=\"images/QUIZ/2c.gif\"\height=\"120\" width=\"300\"/>",
-        "d": "<img src=\"images/QUIZ/2d.gif\"\height=\"120\" width=\"300\"/>"
+        "a": "<img src='images/QUIZ/2a.gif' height='120' width='300'  />",
+        "b": "<img src='images/QUIZ/2b.gif' height='120' width='300'  />",
+        "c": "<img src='images/QUIZ/2c.gif' height='120' width='300'  />",
+        "d": "<img src='images/QUIZ/2d.gif' height='120' width='300'  />"
       },
       "explanations": {
         "a": "",
@@ -36,7 +36,7 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/QUIZ/3.gif\"\height=\"150\" width=\"400\"/><br>The above figure represents",
+      "question": "<img src='images/QUIZ/3.gif' height='150' width='400'/><br>The above figure represents",
       "answers": {
         "a": "NOR function",
         "b": "OR function",
@@ -53,10 +53,10 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/QUIZ/4.gif\"\height=\"150\" width=\"400\"/><br>For ladder rung shown above, choose the correct input and output status file bit condition ",
+      "question": "<img src='images/QUIZ/4.gif' height='150' width='400' /><br>For ladder rung shown above, choose the correct input and output status file bit condition ",
       "answers": {
-        "a": "<img src=\"images/QUIZ/4a.gif\"\height=\"100\" width=\"300\"/>",
-        "b": "<img src=\"images/QUIZ/4b.gif\"\height=\"100\" width=\"300\"/>",
+        "a": "<img src='images/QUIZ/4a.gif' height='100' width='300' />",
+        "b": "<img src='images/QUIZ/4b.gif' height='100' width='300' />",
         "c": "Both are true"
       },
       "explanations": {
@@ -68,7 +68,7 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/QUIZ/5.gif\"\height=\"150\" width=\"400\"/><br>The above figure represents",
+      "question": "<img src='images/QUIZ/5.gif' height='150' width='400' /><br>The above figure represents",
       "answers": {
         "a": "OR function",
         "b": "NOR function",
@@ -85,7 +85,7 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/QUIZ/6.gif\"\height=\"150\" width=\"400\"/><br>The above figure represents",
+      "question": "<img src='images/QUIZ/6.gif' height='150' width='400' /><br>The above figure represents",
       "answers": {
         "a": "XOR function",
         "b": "NOR function",
@@ -102,7 +102,7 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/QUIZ/7.gif\"\height=\"150\" width=\"400\"/><br>The above figure represents",
+      "question": "<img src='images/QUIZ/7.gif' height='150' width='400'/><br>The above figure represents",
       "answers": {
         "a": "NOR function",
         "b": "XOR function",
@@ -119,7 +119,7 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/QUIZ/8.gif\"\height=\"150\" width=\"400\"/><br>The above figure represents",
+      "question": "<img src='images/QUIZ/8.gif' height='150' width='400'/><br>The above figure represents",
       "answers": {
         "a": "XOR function",
         "b": "NOR function",
@@ -136,11 +136,11 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/QUIZ/9.gif\"\height=\"180\" width=\"450\"/><br>For ladder rung shown above, choose the correct input and output status file bit condition",
+      "question": "<img src='images/QUIZ/9.gif' height='180' width='450'/><br>For ladder rung shown above, choose the correct input and output status file bit condition",
       "answers": {
-        "a": "<img src=\"images/QUIZ/9a.gif\"\height=\"100\" width=\"300\"/>",
-        "b": "<img src=\"images/QUIZ/9b.gif\"\height=\"100\" width=\"300\"/>",
-        "c": "<img src=\"images/QUIZ/9c.gif\"\height=\"100\" width=\"300\"/>",
+        "a": "<img src='images/QUIZ/9a.gif' height='100' width='300' />",
+        "b": "<img src='images/QUIZ/9b.gif' height='100' width='300' />",
+        "c": "<img src='images/QUIZ/9c.gif' height='100' width='300' />",
         "d": "None of the above"
       },
       "explanations": {
@@ -153,11 +153,11 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"simages/QUIZ/10.gif\"\height=\"180\" width=\"450\"/><br>For ladder rung shown above, choose the correct input and output status file bit condition",
+      "question": "<img src='images/QUIZ/10.gif' height='180' width='450'/><br>For ladder rung shown above, choose the correct input and output status file bit condition",
       "answers": {
-        "a": "<img src=\"images/QUIZ/10a.gif\"\height=\"100\" width=\"300\"/>",
-        "b": "<img src=\"images/QUIZ/10b.gif\"\height=\"100\" width=\"300\"/>",
-        "c": "<img src=\"images/QUIZ/10c.gif\"\height=\"100\" width=\"300\"/>",
+        "a": "<img src='images/QUIZ/10a.gif' height='100' width='300' />",
+        "b": "<img src='images/QUIZ/10b.gif' height='100' width='300' />",
+        "c": "<img src='images/QUIZ/10c.gif' height='100' width='300' />",
         "d": "Both a and b"
       },
       "explanations": {
@@ -208,7 +208,8 @@
       "explanations": {
         "a": "",
         "b": "",
-        "c": "
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "d",
       "difficulty": ""
@@ -239,7 +240,8 @@
       "explanations": {
         "a": "",
         "b": "",
-        "c": "
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "d",
       "difficulty": ""

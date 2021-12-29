@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Consider the following PLC Ladder rung <br><img src=\"images/SE/1.gif\"\height=\"150\" width=\"400\"/><br>For the following input status file bit condition shown below<br><img src=\"images/SE/1a.gif\"\height=\"100\" width=\"400\"/><br>The output O1",
+      "question": "Consider the following PLC Ladder rung <br><img src='images/SE/1.gif' height='150' width='400'  /><br>For the following input status file bit condition shown below<br><img src='images/SE/1a.gif' height='100' width='400'  /><br>The output O1",
       "answers": {
         "a": "Will be energized",
         "b": "Will not be energized"
@@ -15,7 +15,7 @@
       "difficulty": ""
     },
     {
-      "question": "Consider the following PLC Ladder rung <br><img src=\"images/SE/2.gif\"\height=\"150\" width=\"400\"/><br>For the following input status file bit condition shown below<br><img src=\"images/SE/2a.gif\"\height=\"100\" width=\"400\"/><br>The output O1",
+      "question": "Consider the following PLC Ladder rung <br><img src='images/SE/2.gif' height='150' width='400'  /><br>For the following input status file bit condition shown below<br><img src='images/SE/2a.gif' height='100' width='400'  /><br>The output O1",
       "answers": {
         "a": "Will be energized",
         "b": "Will not be energized"
@@ -28,7 +28,7 @@
       "difficulty": ""
     },
     {
-      "question": "Consider the following PLC Ladder rung <br><img src=\"images/SE/3.gif\"\height=\"150\" width=\"400\"/><br>For the following input status file bit condition shown below<br><img src=\"images/SE/3a.gif\"\height=\"100\" width=\"400\"/><br>The output O1",
+      "question": "Consider the following PLC Ladder rung <br><img src='images/SE/3.gif' height='150' width='400'  /><br>For the following input status file bit condition shown below<br><img src='images/SE/3a.gif' height='100' width='400'  /><br>The output O1",
       "answers": {
         "a": "Will be energized",
         "b": "Will not be energized"
@@ -41,7 +41,7 @@
       "difficulty": ""
     },
     {
-      "question": "Consider the following PLC Ladder rung <br><img src=\"images/SE/4.gif\"\height=\"150\" width=\"400\"/><br>For the following input status file bit condition shown below<br><img src=\"images/SE/4a.gif\"\height=\"100\" width=\"400\"/><br>The output O1",
+      "question": "Consider the following PLC Ladder rung <br><img src='images/SE/4.gif' height='150' width='400'  /><br>For the following input status file bit condition shown below<br><img src='images/SE/4a.gif' height='100' width='400'  /><br>The output O1",
       "answers": {
         "a": "Will be energized",
         "b": "Will not be energized"
@@ -54,7 +54,7 @@
       "difficulty": ""
     },
     {
-      "question": "Consider the following PLC Ladder rung <br><img src=\"images/SE/5.gif\"\height=\"150\" width=\"400\"/><br>For the following input status file bit condition shown below<br><img src=\"images/SE/5a.gif\"\height=\"100\" width=\"400\"/><br>The output O1",
+      "question": "Consider the following PLC Ladder rung <br><img src='images/SE/5.gif' height='150' width='400'  /><br>For the following input status file bit condition shown below<br><img src='images/SE/5a.gif' height='100' width='400'  /><br>The output O1",
       "answers": {
         "a": "Will not be energized",
         "b": "Will be energized"
@@ -67,7 +67,7 @@
       "difficulty": ""
     },
     {
-      "question": "Consider the following PLC Ladder rung <br><img src=\"images/SE/6.gif\"\height=\"150\" width=\"400\"/><br>For the following input status file bit condition shown below<br><img src=\"images/SE/6a.gif\"\height=\"100\" width=\"400\"/><br>The output O1",
+      "question": "Consider the following PLC Ladder rung <br><img src='images/SE/6.gif' height='150' width='400'  /><br>For the following input status file bit condition shown below<br><img src='images/SE/6a.gif' height='100' width='400'  /><br>The output O1",
       "answers": {
         "a": "Will not be energized",
         "b": "Will be energized"
@@ -80,7 +80,7 @@
       "difficulty": ""
     },
     {
-      "question": "Consider the following PLC Ladder rung <br><img src=\"images/SE/7.gif\"\height=\"150\" width=\"400\"/><br>For the following input status file bit condition shown below<br><img src=\"images/SE/7a.gif\"\height=\"100\" width=\"400\"/><br>The output O1",
+      "question": "Consider the following PLC Ladder rung <br><img src='images/SE/7.gif' height='150' width='400'  /><br>For the following input status file bit condition shown below<br><img src='images/SE/7a.gif' height='100' width='400'  /><br>The output O1",
       "answers": {
         "a": "Will be energized",
         "b": "Will not be energized"
@@ -93,7 +93,7 @@
       "difficulty": ""
     },
     {
-      "question": "Consider the following PLC Ladder rung <br><img src=\"images/SE/8.gif\"\height=\"150\" width=\"400\"/><br>For the following input status file bit condition shown below<br><img src=\"images/SE/8a.gif\"\height=\"100\" width=\"400\"/><br>The output O1",
+      "question": "Consider the following PLC Ladder rung <br><img src='images/SE/8.gif' height='150' width='400'  /><br>For the following input status file bit condition shown below<br><img src='images/SE/8a.gif' height='100' width='400'  /><br>The output O1",
       "answers": {
         "a": "Will be energized",
         "b": "Will not be energized"

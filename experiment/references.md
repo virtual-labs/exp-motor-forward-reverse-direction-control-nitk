@@ -1,10 +1,10 @@
-<ul style="text-align: justify;">
+<ol style="text-align: justify;">
 <li>Introduction to Programmable Logic Controllers- Garry Dunning, 2nd Edition, Thomson, ISBN: 981-240-625-5.</li>
 <li>Process Control Instrumentation Technology - Curtis Johnson, Prentice Hall of India.</li>
 <li>W.Bolton,"Programmable Logic Controllers",Newnes publications,Fifth Edition,2009.</li>
 <li>Frank D. Petruzella,"Programmable Logic Controllers",Tata McGraw-Hill Education,2005.</li>
 <li>James A. Rehg, Glenn J. Sartori, "Programmable Logic Controllers", Prentice Hall,2007.</li>
-</ul>
+</ol>
 <!-- <table style="text-align:justify;">
   <tr style="background-color:transparent;">
     <th style="width:65%;">References</th>
