@@ -1,0 +1,532 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'NITK',
+        'phase': 'Testing',
+        'expName': 'MOTOR FORWARD AND REVERSE DIRECTION CONTROL USING PLC',
+        'expShortName': 'motor-forward-reverse-direction-control'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="motor-forward-reverse-direction-control">
+    	<meta name="developer-institute" content="NITK">
+    	<meta name="learning-unit" content="MOTOR FORWARD AND REVERSE DIRECTION CONTROL USING PLC">
+    	<meta name="task-name" content="Procedure">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+  </head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center">
+            <ul class="navbar-nav ml-auto text-center d-flex flex-md-row">
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in">HOME</a>
+              </li>
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in/participating-institutes">PARTNERS</a>
+              </li>
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in/contact-us">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+		  <div class="row py-4 px-4 breadcrumbs">
+		  	<div class="title is-4 tools">Tools</div>
+		  	<span class="mx-2">
+		  		<i aria-hidden="true" class="fa fa-angle-right"></i>
+		  	</span>
+		  	<a href="performance-report.html" target="_blank">
+		  		<button class="v-button">Performance Tool</button>
+		  	</a>
+		  </div>
+	  </div>
+          <div class="flex-column">
+            <div id="plugin-bug-report"></div>
+            <div id="plugin-rating"></div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2 ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2  current-item ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Self Evaluation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="assignment.html" class="p-2 ">
+                                      Assignment
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Quiz
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="videos.html" class="p-2 ">
+                                      Videos
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2 ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2  current-item ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Self Evaluation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="assignment.html" class="p-2 ">
+                        Assignment
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Quiz
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="videos.html" class="p-2 ">
+                        Videos
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="motor-forward-and-reverse-direction-control-using-plc">Motor forward and reverse direction control using PLC</h2>
+          
+            </div>
+              <h3 id="procedure">Procedure</h3>
+          <p style="text-align: justify;">In our experiment, we wish to change the direction of motor rotation by click of a push button, using a PLC. <br>
+          Let us see the basic diagram of the circuitry:  </p>
+          
+          <center>
+          <img src="images/PR/1.gif" height="500" width="450"></center><br>
+          
+          <h4 id="ladder-logic-design-">Ladder logic design :</h4>
+          <p style="text-align: justify;">Now, let us see how the ladder logic of motor forward and reverse direction control is implemented using a PLC. </p>
+          
+          <ul type="disc" style="text-align: justify;">
+          <li>Inputs to the PLC are:
+          <ul style="text-align: justify;">
+          <li>Stop ( normally open push button ) <br></li>
+          <li>Forward (normally open push button ) <br></li>
+          <li>Reverse (normally open push button ) <br></li>
+          </ul><br>
+          
+          </li>
+          
+          <li>Outputs to the PLC are:
+          <ul style="text-align: justify;">
+          <li>Motor forward circuit <br></li>
+          <li>Motor reverse circuit  <br></li>
+          <li>Forward (LED)  <br></li>
+          <li>Reverse (LED)  <br></li>
+          <li>Forward slow (LED)  <br></li>
+          <li>Reverse slow (LED)  <br></li>
+          </ul>
+          </li>
+          <br>
+          <strong><u>Note</u></strong> : Motor forward circuit (forwardmtr) and Motor reverse circuit (reversemtr) is a circuit, which is connected to the motor, which changes the supply polarity , which is fed to the motor. In return, changes the direction of motor rotation.
+          
+          <br>
+          <br>
+          
+          <li>Since the inputs and outputs are less, 8-point input module and 8 point output module is sufficient, where CPU resides in slot 0, input module resides in slot 1 and output module in slot 2. </li>
+          <br>
+          
+          <li>Let us assign the address for the input and output signals of the PLC: <br><br>
+          <ul style="text-align: justify;">
+          <li>Stop (normally open push button ) : I:1/0 <br></li>
+          <li>Forward (normally open push button) : I:1/1 <br></li>
+          <li>Reverse (normally open push button) : I:1/2 <br></li>
+          <li>Temp1(temporary variable) : O:2/0 <br></li>
+          <li>forwardmtr ( Motor forward circuit ) : O:2/1 <br></li>
+          <li>Temp2(temporary variable) : O:2/2 <br></li>
+          <li>Forward (LED) : O:2/3 <br></li>
+          <li>reversemtr (Motor reverse circuit ) : O:2/4 <br></li>
+          <li>Reverse (LED) : O:2/5 <br></li>
+          <li>Forwardslow (LED) : O:2/6 <br></li>
+          <li>Reverseslow (LED) : O:2/7<br></li>
+          </ul>
+          </li><br>
+          
+          <li>Let us see its ladder logic diagram:<br>
+          
+          <center>
+          <img src="images/PR/2.gif" height="600" width="650"></center>
+          </li></ul>
+          
+          <p style="text-align: justify;"><strong><u>Note</u></strong> : Here, the motor’s breaking is natural breaking. So when the motor’s direction in changed, it cannot instantly change its direction. When motor’s supply is cut down, it will have a natural breaking, during which its speed reduces and finally comes to rest. Our assumption is that, the motor takes 7 seconds to completely stop. So when the motor is instructed to change direction by the user, PLC cuts off its supply, till it comes to rest and then, it changes its direction, using the direction changing circuits ( forwardmtr, reversemtr ) . In order to be on the safer side, an off-delay timer of 10 seconds ( greater than 7 seconds) is used, to activate the motor direction changing circuits.</p>
+          
+          <ol type="a">
+          <li><br>
+          <center>
+          <img src="images/PR/3.gif" height="350" width="550"></center>
+          <p style="text-align: justify;">The above rungs are used for the forward motor direction rotation. </p>
+          </li><br>
+          
+          <li><br>
+          <center>
+          <img src="images/PR/4.gif" height="200" width="550"></center>
+          <p style="text-align: justify;">The above rung is executed when the motor is instructed to change direction from forward to reverse, or from forward to stop. </p>
+          </li><br>
+          
+          <li><br>
+          <center>
+          <img src="images/PR/5.gif" height="450" width="550"></center>
+          <p style="text-align: justify;">The above rungs are used for the reverse motor direction rotation. </p>
+          </li><br>
+          
+          <li><br>
+          <center>
+          <img src="images/PR/6.gif" height="200" width="550"></center>
+          <p style="text-align: justify;">The above rung is executed when the motor is instructed to change direction from reverse to forward, or from reverse to stop. </p>
+          </li>
+          
+          </ol>
+          
+          <p>The following screen shots explain the operation:</p>
+          <center>
+          <img src="images/PR/7.gif" height="500" width="700"></center>
+          The above screen shot represents the condition when the motor is running forward.<br>
+          
+          <center>
+          <img src="images/PR/8.gif" height="500" width="700"></center>
+          The above screen shot represents the condition when the reverse push button is pressed while the motor was running in forward direction, and the motor starts braking before it starts revolving in reverse direction.<br>
+          
+          
+          <center>
+          <img src="images/PR/9.gif" height="500" width="700"></center>
+          The above screen shots represents the condition when the motor is running in reverse direction.
+          
+          </div>
+        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fa fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fa fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fa fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fa fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+
+      <script src="./assets/js/toggleSidebar.js"></script>
+      
+  
+
+<script type="module" src="https://vjspranav.github.io/vleads-bug-report/client/app.js"></script></body></html>
