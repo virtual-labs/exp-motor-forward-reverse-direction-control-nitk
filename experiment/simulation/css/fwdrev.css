@@ -1,0 +1,116 @@
+html
+{
+    -moz-user-select     : none;
+    -khtml-user-select   : none;
+    -webkit-user-select  : none;
+    -o-user-select       : none;
+    user-select          : none;
+}
+
+#simscreen
+{
+	position: relative;
+	left:0px;
+	top:0px;
+	height: 710px; 
+	width:948px;
+	border:solid 1px;
+	background-color:#000;
+}
+
+#title{
+	position:relative;
+	left: 1px;
+	top: 1px;
+	height:53px;
+	width:942px;
+	font-size: 20px;
+	text-align:center;
+	background-color: black;
+	font-family: verdana;
+	color: White;
+	text-transform: uppercase; 
+	border:2px solid #fff;
+}
+
+#title h3
+{
+	padding-top:10px;
+	margin:0px;
+}	
+
+.simsubscreen
+{
+	position:absolute;
+	left:1px;
+	top:57px;
+	height:627.5px;
+	width:942px;
+	border:2px solid #fff;
+}
+
+.incanvas
+{
+	margin:7.5px 0 0 7.5px;
+	padding:5px;
+}
+
+#nextButton
+{
+	position:absolute;
+	left:752px;
+	top:530px;
+	cursor:pointer;
+}
+
+#copyright{
+	position: absolute;
+	left:285px;
+	top: 692px;
+	text-align:center;
+	font-size:12px;
+	color:white;
+}
+
+.bits
+{
+	/* padding:1px;  */
+	color:black; 
+	font-size:10px; 
+	font-weight:bold;
+}
+.output
+{
+	position:absolute; 
+	left:861px; 
+	background: radial-gradient(#F40000,#000000); 
+	width:18px; 
+	height:12px;
+	border-radius:3px; 
+}
+
+@-webkit-keyframes rotate
+{
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+@keyframes rotate
+{
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes pointerMove
+{
+	0% {left:690px;}
+	50% {left:700px;}
+	100% {left:690px;}
+}
+
+@keyframes pointerMove
+{
+	0% {left:690px;}
+	50% {left:700px;}
+	100% {left:690px;}
+}
